@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import Header from "./Header"
 import Footer from "./Footer"
+import styles from "../styles/Layout.module.css";
 
 interface LayoutProps {
   pageTitle: string;
@@ -13,9 +14,9 @@ const Layout: React.FC<LayoutProps> = ({ pageTitle, children }) => {
       <Head>
         <title>NFT - Next.js | {pageTitle}</title>
       </Head>
-      <div>
+      <div className={styles.body}>
         <Header />
-        <main>{children}</main>
+        <main className={styles.main}>{children}</main>
         <Footer />
       </div>
     </>

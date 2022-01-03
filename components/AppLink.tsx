@@ -8,7 +8,7 @@ interface AppLinkProps extends LinkProps {
 const AppLink: React.FC<AppLinkProps> = ({href, label}) => {
     return (
         <Link href={href}>
-            <a>{label}</a>
+            <a >{label}</a>
         </Link>
     )
 }
