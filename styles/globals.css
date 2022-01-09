@@ -17,10 +17,8 @@ body {
     'Shizuru',
     cursive
     ;
-    background-color: #53488d;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+    background-color: #faf7f2;
+    position: relative;
     z-index: -1;
 }
 

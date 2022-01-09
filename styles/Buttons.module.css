@@ -1,17 +1,17 @@
-.button {
+.wallet-button {
     font-weight: 600;
     border: solid 2px black;
     outline: 0;
-    padding: .5rem 2rem;
-    font-size: 1rem;
+    padding: .4rem 1.4rem;
+    font-size: .8rem;
     letter-spacing: .08rem;
-    background-color: white;
+    background-color: #7ed6df;
     border-radius: .35rem;
     position: relative;
     cursor: pointer;
 }
 
-.button::after {
+.wallet-button::after {
     content: '';
     position: absolute;
     top: .5rem;
@@ -23,14 +23,26 @@
     border-radius: .35rem;
     border: 0;
     box-shadow: 0px 0px 0px 2px black;
-    transition: all .3s ease-in-out;
+    transition: all .16s ease-in-out;
     
 }
 
-.button:hover::after {
+.wallet-button:hover::after {
     top: -.5rem;
     left: -.5rem;
     width: calc(100% + .5rem * 2);
     height: calc(100% + .5rem * 2);
-    } 
+}
+
+.wallet-button-disconnect {
+    background-color: #9389c2;
+    color: #fff;
+}
+
+.wallet-button-disconnect::after {
+    background-color: #ff7979;
+}
+
+/* https: //codepen.io/aruizh/pen/mdPMeGN */
+/* https: //codepen.io/sowmyaseshadri/pen/mdrxXPL */
 

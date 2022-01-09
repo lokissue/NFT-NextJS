@@ -1,12 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 import AppLink from "./AppLink";
 import Link from "next/link";
 import styles from "../styles/Layout.module.css";
-import buttonStyles from "../styles/WalletButton.module.css"
+import buttonStyles from "../styles/Buttons.module.css"
 
 interface HeaderProps {}
 
 const Header: React.FC<HeaderProps> = () => {
+    const [isConnected, setIsConnected] = useState(false);
+    // const [buttonTItle, setButtonTitle] = useState("Wallet");
+
+    const toggleWallet = () => {
+        setIsConnected(!isConnected);
+    }
+
   return (
     <div>
       <header className={styles.header}>
@@ -18,7 +25,7 @@ const Header: React.FC<HeaderProps> = () => {
           </a>
         </Link>
         <nav>
-          <button className={`${buttonStyles.button} ${buttonStyles.style2}`} onClick={() => console.log('connect wallet')}>Wallet</button>
+          <button className={`${buttonStyles['wallet-button']}` + (isConnected ? ` ${buttonStyles['wallet-button-disconnect']}` : " ")} onClick={toggleWallet}>{isConnected ? "Disconnect" : "Connect"}</button>
         </nav>
       </header>
     </div>

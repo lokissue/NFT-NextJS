@@ -6,7 +6,7 @@ interface FooterProps {}
 const Footer: React.FC<FooterProps> = () => {
     return (
         <footer className={styles.footer} style={{ textAlign: 'center'}}>
-            <p>&copy; Luoming Zhang {new Date().getFullYear}</p>
+            <p style={{color: '#fff'}}>&copy; lokissue {new Date().getFullYear()}</p>
         </footer>
     )
 }

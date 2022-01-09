@@ -1,21 +1,12 @@
-/* .body {
+.body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
     margin: 0;
-} */
+}
 
 .container {
     padding: 0 2rem;
-}
-
-.content {
-    width: 100%;
-    max-width: 70em;
-    margin-left: auto;
-    margin-right: auto;
-    clear: both;
-    position: relative;
 }
 
 .main {
@@ -30,7 +21,7 @@
 
 .logo {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-family: "Shizuru";
 }
 
